@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#vidu1 {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+li.Li-inline {
+  display: inline;
+}
+span.span-block {
+  display: block;
+}
+h1.display_none {
+  display: none;
+}
+h1.visibility_hidden {
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+
+<!-- CSS box model -->
+
+<h2>Calculate the total width:</h2>
+
+<img src="https://www.w3schools.com/css/klematis4_big.jpg" width="350" height="263" alt="an image">
+<div class="vidu1">The picture above is 350px wide. The total width of this element is also 350px.</div>
+
+<!-- CSS position: static -->
+<br>
+<div style="position:static; border:1px solid; padding:5px; margin:0px;">
+  This div element has {position: static};
+</div>
+ 
+<br>
+<h3 style="border: 1px solid black;">CSS {position:static; left: 50px;}</h3>
+ 
+<div style="position:static; left: 50px;">
+  This div element has {position: static} and {left: 50px} 
+</div>
+
+<!-- CSS position: relative -->
+<h3>{position: relative;}</h3>
+ 
+<div style="position: relative; width:250px; border: 1px solid black;">
+   position: relative; width:250px;
+</div>
+<br>
+ 
+<h3>{position: relative; left:50px; top:50px;}</h3>
+ 
+<div style="position: relative; left:50px; top:50px; width:250px; border: 1px solid black;">
+  position: relative; width:250px; <br/>
+  left:50px; top:50px;
+</div>
+
+<!-- CSS position: fixed -->
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<!-- CSS position: absolute -->
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+<!-- CSS position: sticky -->
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:400px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. 
+  Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. 
+  Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. 
+  Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<!-- block element -->
+<div> &ltdiv&gt is a block elements </div>
+<!-- inline element -->
+<span> &ltspan&gt this is an inline element <span>
+
+<!-- Override The Default Display Value -->
+<p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li class="li-inline"><a href="#" target="_blank">HTML</a></li>
+  <li class="li-inline"><a href="#" target="_blank">CSS</a></li>
+  <li class="li-inline"><a href="#" target="_blank">JavaScript</a></li>
+</ul>
+
+<span class="span-block">A display property with a value of "block" results in</span> <span class="span-block">a line break between the two elements.</span>
+
+<!-- display:none -->
+<h1>This is a visible heading</h1>
+<h1 class="display_none">This is a hidden heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+<!-- visbility:hidden -->
+<h1>This is a visible heading</h1>
+<h1 class="visibility_hidden">This is a hidden heading</h1>
+<p>Notice that the hidden heading still takes up space.</p>
+
+</body>
+</html>

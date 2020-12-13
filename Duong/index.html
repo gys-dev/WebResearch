@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8	">
+<title>Ví dụ về Flex Box</title>
+<style>
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  background-color: DodgerBlue;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+}
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+.flex-container3 {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+.flex-container3 > div {	
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container2 > div {	
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container1 > div {	
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container > div {	
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container4 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+.flex-container4 > div {	
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container5 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: DodgerBlue;
+}
+
+.flex-container5 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;	
+  font-size: 30px;
+}
+.flex-container6 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  background-color: DodgerBlue;
+}
+
+.flex-container6 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container7 {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container7 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.thep{
+	  background-color: red;
+	
+}
+
+</style>
+</head>
+<body>
+<div class="thep">
+<p class="thep"> Sử dụng  CSS box model  <br>
+
+Nội dung được bao xung quanh bởi lề , đường viền ,padding
+Nội dung đó chinh là văn bản 1 , văn bản 2
+</p>
+<div class="flex-container7">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+</div>
+</div>
+<p class="thep"> Nội dùng được sắp xếp theo cột (Sử dụng  flex-direction: column;  )</p>
+<div class="flex-container">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+</div>
+<p class="thep"> Nội dùng được sắp xếp theo hàng (Sử dụng  flex-direction: row; )</p>
+<div class="flex-container1">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+</div>
+<p class="thep"> Nội dung được sắp xếp theo hàng (Sử dụng  flex-wrap: wrap; ) </p>
+<div class="flex-container2">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+</div>
+<p class="thep"> Nội dung ra giữa (Sử dụng   justify-content: center;) </p>
+<div class="flex-container3">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+  <div>Văn bản 3</div>  
+</div>
+<p class="thep"> Canh nội dung ra giữa  (Sử dụng   align-items: center;) </p>
+<div class="flex-container4">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+  <div>Văn bản 3</div>  
+</div>
+<p class="thep"> Đưa văn bản xuống dưới   (Sử dụng     align-content: flex-end;;) </p>
+<div class="flex-container6">
+  <div>Văn bản 1</div>
+  <div>Văn bản 2</div>
+  <div>Văn bản 3</div>  
+</div>
+
+
+</body>
+</html>

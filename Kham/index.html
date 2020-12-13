@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ví dụ Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css" \>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <style>
+            .container {
+                background-color: aqua;
+            }
+
+            .container-fluid {
+                background-color: #28A04E;
+            }
+        </style>
+        
+    </head>
+
+<body>
+
+    <!-- Ví dụ lớp container và container-fluid -->
+    <div class="container">
+        <h1>Trang bootstrap nằm trong vùng chưa .container, thẻ h1</h1>
+        <p>Văn bản, thẻ p</p>
+    </div>
+    <div class="container-fluid">
+        <h1>Trang bootstrap nằm trong vùng chưa .container-fluid, thẻ h1</h1>
+        <p>Văn bản, thẻ p</p>
+    </div>
+    <!-- END - Ví dụ lớp container và container-fluid -->
+
+    <!-- Ví dụ Cấu trúc cơ bản của lưới Bootstrap -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6" style="background-color: rgb(51, 129, 153);">50%</div>
+            <div class="col-sm-6" style="background-color: rgb(226, 9, 9);">50%</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="background-color: rgb(51, 129, 153);">33.33%</div>
+            <div class="col-sm-4" style="background-color: rgb(226, 9, 9);">33.33%</div>
+            <div class="col-sm-4" style="background-color: rgb(168, 23, 113);">33.33%</div>
+        </div>
+        <div class="row">
+            <div class="col" style="background-color: rgb(51, 129, 153);">25%</div>
+            <div class="col" style="background-color: rgb(226, 9, 9);">25%</div>
+            <div class="col" style="background-color: rgb(48, 12, 146);">25%</div>
+            <div class="col" style="background-color: rgb(17, 155, 51);">25%</div>
+        </div>
+    </div>
+    <!-- END - Ví dụ Cấu trúc cơ bản của lưới Bootstrap -->
+
+    <!-- Ví dụ Grid Stacked-to-horizontal-->
+    <div class="container">
+        <h1>Hello world!</h1>
+        <div class="row">
+            <div class="col-sm-6" style="background-color: yellow;">
+                <p>Lorem ipsum...</p>
+            </div>
+            <div class="col-sm-6" style="background-color: pink;">
+                <p>Sed ut perspiciatis...</p>
+            </div>
+        </div>
+    </div>
+    <!-- END - Ví dụ Grid Stacked-to-horizontal -->
+
+    <!-- Ví dụ Hiện thị giao diện trên các kích thước khác nhau-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-4 col-lg-6" style="background-color: yellow;">
+                <p>Vùng 1
+                    <br/>Tablet: 25%
+                    <br/>Desktop: 33.33%
+                    <br/>Large Desktop: 50%
+                </p>
+            </div>
+            <div class="col-sm-9 col-md-8 col-lg-6" style="background-color: pink;">
+                <p>Vùng 1
+                    <br/>Tablet: 75%
+                    <br/>Desktop: 66.66%
+                    <br/>Large Desktop: 50%
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- END - Ví dụ Hiện thị giao diện trên các kích thước khác nhau-->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

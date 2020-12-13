@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .border {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+        }
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Borders| border color</h2>
+        <p>Use a contextual border color to add a color to the border:</p>
+        <span class="border border-primary"></span>
+        <span class="border border-secondary"></span>
+        <span class="border border-success"></span>
+        <span class="border border-danger"></span>
+        <span class="border border-warning"></span>
+        <span class="border border-info"></span>
+        <span class="border border-light"></span>
+        <span class="border border-dark"></span>
+        <span class="border border-white"></span>
+    </div>
+
+    <div class="container">
+        <h2>Borders/Border Radius </h2>
+        <p>Round the corner of an element with the rounded classes:</p>
+        <span class="rounded-sm"></span>
+        <span class="rounded"></span>
+        <span class="rounded-lg"></span>
+        <span class="rounded-top"></span>
+        <span class="rounded-right"></span>
+        <span class="rounded-bottom"></span>
+        <span class="rounded-left"></span>
+        <span class="rounded-circle"></span>
+        <span class="rounded-0"></span>
+    </div>
+    
+    <div class="container">
+        <h2>Float</h2>
+        <p>Float an element to the right with the .float-right class or to the left with .float-left, and clear floats with
+            the .clearfix class.</p>
+        <div class="clearfix">
+            <span class="float-left">Float left</span>
+            <span class="float-right">Float right</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Responsive Floats</h2>
+        <p>Float an element to the left or to the right depending on screen width, with the responsive float classes
+            .float-*-left|right (where * is sm, md, lg or xl).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="clearfix">
+            <div class="float-sm-right">Float right on small screens or wider</div><br>
+            <div class="float-md-right">Float right on medium screens or wider</div><br>
+            <div class="float-lg-right">Float right on large screens or wider</div><br>
+            <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+            <div class="float-none">Float none</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Center Align</h1>
+        <p>Center an element with the .mx-auto class:</p>
+        <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+    </div>
+
+    <div class="container">
+        <h1>Width Utilities</h1>
+        <p>Set the width of an element with the w-* classes:</p>
+        <div class="w-25 bg-warning">Width 25%</div>
+        <div class="w-50 bg-warning">Width 50%</div>
+        <div class="w-75 bg-warning">Width 75%</div>
+        <div class="w-100 bg-warning">Width 100%</div>
+        <div class="mw-100 bg-warning">Max Width 100%</div>
+    </div>
+    
+    <div class="container">
+        <h1>Height Utilities</h1>
+        <p>Set the height of an element with the w-* classes:</p>
+        <div style="height:200px;background-color:#ddd">
+            <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+            <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+            <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+            <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+            <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Spacing Utilities</h1>
+        <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if you want
+            the padding or margin to work on all screen sizes.</p>
+        <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+        <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+        <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)</div>
+    </div>
+
+    <div class="container">
+        <h2>Contextual Colors</h2>
+        <p>Use the contextual classes to provide "meaning through colors":</p>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-primary">This text is important.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-info">This text represents some information.</p>
+        <p class="text-warning">This text represents a warning.</p>
+        <p class="text-danger">This text represents danger.</p>
+        <p class="text-secondary">Secondary text.</p>
+        <p class="text-dark">This text is dark grey.</p>
+        <p class="text-body">Default body color (often black).</p>
+        <p class="text-light">This text is light grey (on white background).</p>
+        <p class="text-white">This text is white (on white background).</p>
+    </div>
+
+    <div class="container">
+        <h2>Contextual Backgrounds</h2>
+        <p>Use the contextual background classes to provide "meaning through colors".</p>
+        <p>Note that you can also add a .text-* class if you want a different text color:</p>
+        <p class="bg-primary text-white">This text is important.</p>
+        <p class="bg-success text-white">This text indicates success.</p>
+        <p class="bg-info text-white">This text represents some information.</p>
+        <p class="bg-warning text-white">This text represents a warning.</p>
+        <p class="bg-danger text-white">This text represents danger.</p>
+        <p class="bg-secondary text-white">Secondary background color.</p>
+        <p class="bg-dark text-white">Dark grey background color.</p>
+        <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+
+    <div class="container">
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    </div>
+
+
+</body>
+
+</html>
